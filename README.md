@@ -75,15 +75,15 @@ The min AIR: 0.8332>0.8
 <p align="center">
 <img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Histograms.png">
 <img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Heat_map.png">
-<img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Iteration_plot.png">
+<img width="500" src="https://github.com/Mystery6/6301project/blob/main/image/Iteration_plot.png">
 </p>
 
 <p align="center">Decision Tree</p>
 
 <p align="center">
 <img src="https://github.com/Mystery6/6301project/blob/main/image/Decision_tree.png">
-<img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Variable_Importance.png">
-<img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Adjust_Iteration_plot.png">
+<img width="500" src="https://github.com/Mystery6/6301project/blob/main/image/Variable_Importance.png">
+<img width="500" src="https://github.com/Mystery6/6301project/blob/main/image/Adjust_Iteration_plot.png">
 </p>
 
 ### Ethical considerations
