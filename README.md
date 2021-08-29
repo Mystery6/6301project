@@ -88,7 +88,9 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 
 ### Ethical considerations
 * **Describe potential negative impacts of using your model**:
+
 * ■ Math or software problems: 
+
 1. The model may be over-fitted. Perform well in training data, but not real data.
 2. For the accuracy score, although when setting higher cutoff, the accuracy score will increase, the problem is higher cutoff means lending more money, so the risk of a big deliquent also increases.
 3. Each decision boundary involves only a single feature. So sometimes the efficiency may not be that high. 
@@ -98,15 +100,18 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 7. Some varibles may have relationship like amount of bill and history payment. If the amount of bill is big, their delayment may be longer. The model may ignore these multicolinearity.
 8. If given a useless variable, which has a clear trend like temperature. When getting into summer, the temperature will increase, but it may not have any impact for people behavior. But from the model, it may use this as a classified principle, which may influence the low accuracy in the real data.
 
-* ■ Real-world risks: Only based on the previous behavior and data. The marriage and education are not stable as the gender or race. So the model cannot relect the influence of these changes bring. Once someone suddenly get rich with bad behavior before, he or she is more likely to be regarded as delinquent. However, the real result is more likely to be pay on time based on his or her wealth now. On the other hand, once someone always paid on time from the former experience, but maybe someday he or she has problem on finance or even decide to cheat the bank. The model cannot reflect their situation now and their thoughts.
+* ■ Real-world risks:
+1. Only based on the previous behavior and data. Once someone suddenly get rich with bad behavior before, he or she is more likely to be regarded as delinquent. However, the real result is more likely to be pay on time based on his or her wealth now. On the other hand, once someone always paid on time from the former experience, but maybe someday he or she has problem on finance or even decide to cheat the bank. The model cannot reflect their situation now and their thoughts.
+2. The marriage and education are not stable as the gender or race. So the model cannot update these diectly and relect the influence of these changes bring. 
 
 * **Describe potential uncertainties relating to the impacts of using your model**:
+
 * ■ Math or software problems: 
 1. The model may perform well with huge data, but when the amount of data is small, the model may have much error.
 2. The model requires the depth of the model to be set as a suitable value. If the depth is set by 5, then we cannot find the best 6. So to prevent the local optima performace, the depth should be set in a little big value to get the global optima.
 * ■ Real-world risks: 
-3. For those who have no former records, I cannot predict correctly whether they will pay on time or delinquent from the model. 
-4. This kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as crime for the rest of life. But they may not have a crime again.Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
+1. For those who have no former records, I cannot predict correctly whether they will pay on time or delinquent from the model. 
+2. This kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as criming again for the rest of life. But they may not have a crime again. Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
 * **Describe any unexpected or results**:
 
 This model performs well after 6 iterations. 
