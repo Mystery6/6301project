@@ -82,7 +82,7 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 
 <p align="center">
 <img src="https://github.com/Mystery6/6301project/blob/main/image/Decision_tree.png">
-<img width="500" src="https://github.com/Mystery6/6301project/blob/main/image/Variable_Importance.png">
+<img width="600" src="https://github.com/Mystery6/6301project/blob/main/image/Variable_Importance.png">
 <img width="500" src="https://github.com/Mystery6/6301project/blob/main/image/Adjusted_Iteration_plot.png">
 </p>
 
