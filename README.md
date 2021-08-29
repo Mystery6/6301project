@@ -69,8 +69,8 @@ When validation AUC becomes max, training AUC becomes higher, accuracy_score bec
 Hispanic-to-White AIR: 0.833205
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
 
+![Histograms](https://github.com/Mystery6/6301project/blob/main/image/Histograms.png)
 ![Iteration Plot](https://github.com/Mystery6/6301project/blob/main/image/Iteration_plot.png)
-! [Iteration Plot](https://github.com/Mystery6/6301project/blob/main/image/Iteration_plot.png)
 
 ### Ethical considerations
 * **Describe potential negative impacts of using your model**:
