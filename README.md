@@ -112,7 +112,7 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 * ■ Real-world risks: 
 1. For those who have no former records, I cannot predict correctly whether they will pay on time or delinquent from the model. 
 2. About the decision model, this kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as criming again for the rest of life. But they may not have a crime again. Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
-3. It will bring the prejudice of others.
+3. It will bring the privilege or prejudice of others. It is not fair.
 
 * **Describe any unexpected or results**:
 
