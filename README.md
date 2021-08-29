@@ -126,5 +126,5 @@ The validation AUC is max at that time and lowest AIR is 0.8332, which is greate
 
 Just a question: I would like to know how to predcit the 'on time' or 'delinquent' of initial credit card holder. 
 
-**In all, I learn a lot from your course and it really arouses my interest to dig deeper in this field. Sincerely thank you for your dedication. Hope to be someone professional and friednly as you.**
+**In all, I learn a lot from your course and it really arouses my interest to dig deeper in this field. I have no other group members but I still made it. I am proud of myself. Last but not least, sincerely thank you for your dedication and hope to be someone professional and friednly as you.**
 
