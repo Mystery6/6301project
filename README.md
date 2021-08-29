@@ -40,25 +40,35 @@
 ### Test Data
 * **Source of test data**: GWU Blackboard, please email my professor's address `jphall@gwu.edu` for more information
 * **Number of rows in test data**: 7,500
-* **State any differences in columns between training and test data**: None
+* **State any differences in columns between training and test data**: None. They have the same columns but have different rows
 
 
 ### Model details
-* **Columns used as inputs in the final model**:
-* **Column(s) used as target(s) in the final model**:
-* **Type of model**:
-* **Software used to implement the model**:
-* **Version of the modeling software**:
-* **Hyperparameters or other settings of your model**:
-
+* **Columns used as inputs in the final model**:19
+* **Column(s) used as target(s) in the final model**: 1
+* **Type of model**: Dictionary
+* **Software used to implement the model**: Python, doing it on the google colab
+* **Version of the modeling software**: 0.22.2.post1
+* **Hyperparameters or other settings of your model**: ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=6, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=12345, splitter='best'
 ### Quantitative analysis
-* **Metrics used to evaluate your final model**:
+* **Metrics used to evaluate your final model**: 
+When AUC reaches maximum, accuracy_score becomes higher, and Hispanic-to-White AIR is greater than 0.8, the model is suitable. 
 * **State the final values of the metrics for all data: training, validation, and test data**:
+Training AUC: 0.783722
+Validation AUC: 0.749610
+Test AUC: 0.7438
+Hispanic-to-White AIR: 0.833205
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
+
 
 ### Ethical considerations
 * **Describe potential negative impacts of using your model**:
-* ■ Math or software problems:
+* ■ Math or software problems: 
 * ■ Real-world risks: who, what, when or how
 * **Describe potential uncertainties relating to the impacts of using your model**:
 * ■ Math or software problems:
