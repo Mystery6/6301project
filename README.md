@@ -21,7 +21,7 @@
 | ---- | ------------- | ---------------- | ---------- |
 |**ID**| ID | int | unique row indentifier |
 | **LIMIT_BAL** | input | float | amount of previously awarded credit |
-| **SEX** | demographic information | int | 1 = male; 2 = female
+| **SEX** | demographic information | int | 1 = male; 2 = female |
 | **RACE** | demographic information | int | 1 = hispanic; 2 = black; 3 = white; 4 = asian |
 | **EDUCATION** | demographic information | int | 1 = graduate school; 2 = university; 3 = high school; 4 = others |
 | **MARRIAGE** | demographic information | int | 1 = married; 2 = single; 3 = others |
@@ -57,13 +57,20 @@
                        random_state=12345, splitter='best'
 ### Quantitative analysis
 * **Metrics used to evaluate your final model**: 
-When AUC reaches maximum, accuracy_score becomes higher, and Hispanic-to-White AIR is greater than 0.8, the model is suitable. 
+When validation AUC becomes max, training AUC becomes higher, accuracy_score becomes higher, and Hispanic-to-White AIR is greater than 0.8, the model is suitable. 
 * **State the final values of the metrics for all data: training, validation, and test data**:
-Training AUC: 0.783722
-Validation AUC: 0.749610
-Test AUC: 0.7438
+
+| Data type | AUC | accuracy score when cutoff is 0.15|
+| ---- | ------------- | ---------------- |
+| Training data |  0.783722 | 0.6482 |
+| Validation data | 0.749610 | 0.6321 |
+| Test data | 0.7438 | 0.6341 |
+ 
 Hispanic-to-White AIR: 0.833205
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
+
+![Image of Yaktocta]
+()
 
 
 ### Ethical considerations
