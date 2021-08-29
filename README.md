@@ -9,8 +9,8 @@
 * **Model implementation code**: [project.ipynb](project.ipynb)
 
 ### Intended Use
-* **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
-* **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
+* **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase. It can predict whether people in the data will pay the bill on time (education only).
+* **Primary intended users**: Students in GWU DNSC 6301 bootcamp. 
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
 ### Training Data
@@ -117,7 +117,7 @@ The results of the first model are following:
 | Training data |  0.7693 |
 | Validation data | 0.7425 | 
 
-The standard deviation of the model is 0.0199. The hispanic-to-white AIR is 0.76, which is problematic and lower than 0.8. So I adjust the model.
+The standard deviation of the model is 0.0199. **The hispanic-to-white AIR is 0.76, which is problematic and lower than 0.8**. So I adjust the model.
 
 When cutoff is 0.18, the results of adjusted model are following:
 
@@ -127,7 +127,7 @@ When cutoff is 0.18, the results of adjusted model are following:
 | Validation data | 0.7496 | 0.7384 |
 | Test data | 0.7438 | 0.7461 |
 
-The standard deviation of the model is 0.0177. And the min AIR: 0.8332>0.8. All the AIR is greater than 0.8, which is pretty good. It shows the bidas remediation is effective.
+The standard deviation of the model is 0.0177. **And the min AIR: 0.8332>0.8. All the AIR is greater than 0.8, which is pretty good. It shows the bidas remediation is effective.**
 
 
 Considered the cutoff is 0.18, the validation AUC is max at that time, the accuracy of the test data is 0.7461, and the AUC of test data is 0.7438. So the model is pretty good.
