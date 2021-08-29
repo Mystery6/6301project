@@ -73,6 +73,10 @@ Hispanic-to-White AIR: 0.833205
 ![Heat map](https://github.com/Mystery6/6301project/blob/main/image/Heat_map.png)
 ![Iteration Plot](https://github.com/Mystery6/6301project/blob/main/image/Iteration_plot.png)
 
+<p align="center">Decision Tree</p>
+
+![Decision Tree](https://github.com/Mystery6/6301project/blob/main/image/Decision_tree.png)
+
 
 ![Variable Importance](https://github.com/Mystery6/6301project/blob/main/image/Variable_Importance.png)
 
