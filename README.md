@@ -97,21 +97,23 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 4. There are many hyper-parameters to tune. But there is no regression coefficients, standard errors or confidence, which will be useful to test the validity of the model.
 5. Single decision trees can be unstable.
 6. Due to the greedy nature of splitting criterion, interacting features that can distinguish between classes together but not individually may be passed over in favor of other features that are less powerful.
-7. Some varibles may have relationship like amount of bill and history payment. If the amount of bill is big, their delayment may be longer. The model may ignore these multicolinearity.
+7. Some varibles may have a close relationship like amount of bill and history payment. If the amount of bill is big, their delayment may be longer. The model may ignore these problem of multicolinearity.
 8. If given a useless variable, which has a clear trend like temperature. When getting into summer, the temperature will increase, but it may not have any impact for people behavior. But from the model, it may use this as a classified principle, which may influence the low accuracy in the real data.
 
 * ■ Real-world risks:
-1. Only based on the previous behavior and data. Once someone suddenly get rich with bad behavior before, he or she is more likely to be regarded as delinquent. However, the real result is more likely to be pay on time based on his or her wealth now. On the other hand, once someone always paid on time from the former experience, but maybe someday he or she has problem on finance or even decide to cheat the bank. The model cannot reflect their situation now and their thoughts.
-2. The marriage and education are not stable as the gender or race. So the model cannot update these diectly and relect the influence of these changes bring. 
+1. Model is based on the previous behavior and data. Once someone suddenly get rich with bad behavior before, he or she is more likely to be regarded as delinquent. However, the real result is more likely to be pay on time based on his or her wealth now. On the other hand, once someone always paid on time from the former experience, but maybe someday he or she has problem on finance or even decides to cheat the bank. The model cannot reflect their situation now and their thoughts.
+2. The marriage and education are not stable as the gender or race. Maybe next time they should pay the bill, these variables are changed. From the model, the predicted result may be different. However, the csv file is confirmed. Maybe someone gets his or her PhD right now, he is not willing to let other blame him on the delinquent or maybe he or she gets a good job and have the ability to pay on time. So the model cannot update these changes diectly and relect their influence.
 
 * **Describe potential uncertainties relating to the impacts of using your model**:
 
 * ■ Math or software problems: 
 1. The model may perform well with huge data, but when the amount of data is small, the model may have much error.
-2. The model requires the depth of the model to be set as a suitable value. If the depth is set by 5, then we cannot find the best 6. So to prevent the local optima performace, the depth should be set in a little big value to get the global optima.
+2. The model requires the depth of the model to be set as a suitable value. If the depth is set by 5, then we cannot find the best 6. So to prevent the local optima, the depth should be set in a little big value to get the global optima.
 * ■ Real-world risks: 
 1. For those who have no former records, I cannot predict correctly whether they will pay on time or delinquent from the model. 
-2. This kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as criming again for the rest of life. But they may not have a crime again. Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
+2. About the decision model, this kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as criming again for the rest of life. But they may not have a crime again. Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
+3. It will bring the prejudice of others.
+
 * **Describe any unexpected or results**:
 
 This model performs well after 6 iterations. 
