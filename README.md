@@ -31,7 +31,7 @@
 | **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
 
-* **Source of training data**: GWU Blackboard, email `jphall@gwu.edu` for more information
+* **Source of training data**: GWU Blackboard, please email my professor's address `jphall@gwu.edu` for more information
 * **How training data was divided into training and validation data**: 50% training, 25% validation, 25% test
 * **Number of rows in training and validation data**:
   * Training rows: 15,000
@@ -60,13 +60,13 @@
 When validation AUC becomes max, training AUC becomes higher, accuracy_score becomes higher, and Hispanic-to-White AIR is greater than 0.8, the model is suitable. 
 * **State the final values of the metrics for all data: training, validation, and test data**:
 
-| Data type | AUC | accuracy score when cutoff is 0.15|
+| Data type | AUC | accuracy score when cutoff is 0.18|
 | ---- | ------------- | ---------------- |
-| Training data |  0.7837 | 0.6482 |
-| Validation data | 0.7496 | 0.6321 |
-| Test data | 0.7438 | 0.6341 |
+| Training data |  0.7837 | 0.7567 |
+| Validation data | 0.7496 | 0.7384 |
+| Test data | 0.7438 | 0.7461 |
  
-Hispanic-to-White AIR: 0.833205
+The min AIR: 0.8332>0.8
 * **Provide any plots related to your data or final model -- be sure to label the plots!**:
 
 ![Histograms](https://github.com/Mystery6/6301project/blob/main/image/Histograms.png)
@@ -85,8 +85,46 @@ Hispanic-to-White AIR: 0.833205
 ### Ethical considerations
 * **Describe potential negative impacts of using your model**:
 * ■ Math or software problems: 
-* ■ Real-world risks: who, what, when or how
+1. The model may be over-fitted. Perform well in training data, but not real data.
+2. For the accuracy score, although when setting higher cutoff, the accuracy score will increase, the problem is higher cutoff means lending more money, so the risk of a big deliquent also increases.
+3. Each decision boundary involves only a single feature. So sometimes the efficiency may not be that high. 
+4. There are many hyper-parameters to tune. But there is no regression coefficients, standard errors or confidence, which will be useful to test the validity of the model.
+5. Single decision trees can be unstable.
+6. Due to the greedy nature of splitting criterion, interacting features that can distinguish between classes together but not individually may be passed over in favor of other features that are less powerful.
+7. Some varibles may have relationship like amount of bill and history payment. If the amount of bill is big, their delayment may be longer. The model may ignore these multicolinearity.
+8. If given a useless variable, which has a clear trend like temperature. When getting into summer, the temperature will increase, but it may not have any impact for people behavior. But from the model, it may use this as a classified principle, which may influence the low accuracy in the real data.
+
+limits* ■ Real-world risks: Only based on the previous behavior and data. The marriage and education are not stable as the gender or race. So the model cannot relect the influence of these changes bring. Once someone suddenly get rich with bad behavior before, he or she is more likely to be regarded as delinquent. However, the real result is more likely to be pay on time based on his or her wealth now. On the other hand, once someone always paid on time from the former experience, but maybe someday he or she has problem on finance or even decide to cheat the bank. The model cannot reflect their situation now and their thoughts.
+
 * **Describe potential uncertainties relating to the impacts of using your model**:
-* ■ Math or software problems:
-* ■ Real-world risks: who, what, when or how?
+* ■ Math or software problems: 
+1. The model may perform well with huge data, but when the amount of data is small, the model may have much error.
+2. The model requires the depth of the model to be set as a suitable value. If the depth is set by 5, then we cannot find the best 6. So to prevent the local optima performace, the depth should be set in a little big value to get the global optima.
+* ■ Real-world risks: 
+3. For those who have no former records, I cannot predict correctly whether they will pay on time or delinquent from the model. 
+4. This kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as crime for the rest of life. But they may not have a crime again.Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
 * **Describe any unexpected or results**:
+This model performs well after 6 iterations. The results of the first model are following:
+
+| Data type | AUC |
+| ---- | ------------- | 
+| Training data |  0.7693 |
+| Validation data | 0.7425 | 
+The standard deviation of the model is 0.0199.
+
+The results of adjusted model are following:
+
+| Data type | AUC | accuracy score when cutoff is 0.18|
+| ---- | ------------- | ---------------- |
+| Training data |  0.7837 | 0.7567 |
+| Validation data | 0.7496 | 0.7384 |
+| Test data | 0.7438 | 0.7461 |
+The standard deviation of the model is 0.0177. And the min AIR: 0.8332>0.8
+
+
+The validation AUC is max at that time and lowest AIR is 0.8332, which is greater than 0.8. It shows the bidas remediation is effective. Considered the cutoff is 0.18, the accuracy of the test data is 0.7461, and the AUC of test data is 0.7438. So the model is pretty good.
+
+Just a question: I would like to know how to predcit the 'on time' or 'delinquent' of initial credit card holder. 
+
+**In all, I learn a lot from your course and it really arouses my interest to dig deeper in this field. Sincerely thank you for your dedication. Hope to be someone professional and friednly as you.**
+
