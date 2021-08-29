@@ -46,7 +46,7 @@
 ### Model details
 * **Columns used as inputs in the final model**:19
 * **Column(s) used as target(s) in the final model**: 1
-* **Type of model**: Dictionary
+* **Type of model**: Decision Tree
 * **Software used to implement the model**: Python, doing it on the google colab
 * **Version of the modeling software**: 0.22.2.post1
 * **Hyperparameters or other settings of your model**: ccp_alpha=0.0, class_weight=None, criterion='gini',
