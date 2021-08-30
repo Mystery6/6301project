@@ -76,6 +76,7 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 <img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Histograms.png">
 <img width="700" src="https://github.com/Mystery6/6301project/blob/main/image/Heat_map.png">
 <img width="500" src="https://github.com/Mystery6/6301project/blob/main/image/Iteration_plot.png">
+** Iteration plot of the first model**
 </p>
 
 <p align="center">Decision Tree</p>
