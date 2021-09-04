@@ -112,7 +112,7 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 * ■ Real-world risks: 
 1. For those who have no former records, I cannot predict correctly whether they will pay on time or delinquent from the model. 
 2. About the decision model, this kind of model may offer a reference to human, but on the importatnt thing, like detecting crime, this thing cannot be only determined by the former record. As when someone has had a crime, he or she may be regarded as criming again for the rest of life. But they may not have a crime again. Besides, for those people who has the first crime, the model cannot detect their bad behaviors.
-3. It will bring the privilege or prejudice of others. It is not fair.
+3. It will bring the privilege or prejudice of others. For these regarded as 'on time', they will get more benefits not only from the bank. Once they are trying to apply for school or hunt a job, if these data is exposed to the interviewers, they may have a first impression about these people without meeting them. This first impression is not easy to be changed and more likely to influence the results. Needless to say, 'on time' is better than 'delinquent' from many people's view. But it cannot reflect the status and quality now. So with these privilege or prejudice in advence, it is not fair.
 
 * **Describe any unexpected or results**:
 
