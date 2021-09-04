@@ -140,7 +140,7 @@ The standard deviation of the model is 0.0177. **And the min AIR: 0.8332>0.8. Al
 Considered the cutoff is 0.18, the validation AUC is max at that time, the accuracy of the test data is 0.7461, and the AUC of test data is 0.7438. So the model is pretty good.
 
 Question: 
-1. I would like to know how to predcit the 'on time' or 'delinquent' of initial credit card holder. 
+1. I would like to know how to predict the 'on time' or 'delinquent' of initial credit card holder. 
 2. I search on the internet for a long time but cannot find a way to put my form in the center of the page.
 
 **In all, I learn a lot from your course and it really arouses my interest to dig deeper in this field. I have no other group members but I still made it. I am proud of myself. Last but not least, sincerely thank you for your dedication and hope to be someone professional and friednly as you.**
