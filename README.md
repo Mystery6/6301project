@@ -44,8 +44,8 @@
 
 
 ### Model details
-* **Columns used as inputs in the final model**: There are 19 columns, which are 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'].
-* **Column(s) used as target(s) in the final model**: There is 1 columns, which is 'DELINQ_NEXT'.
+* **Columns used as inputs in the final model**: There are 19 columns. The columns are 'amount of previously awarded credit', 'history of past payment', 'amount of previous payment', and 'amount of bill statement'. Detailed names are 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'.
+* **Column(s) used as target(s) in the final model**: There is 1 column, which is 'DELINQ_NEXT'. 'DELINQ_NEXT' means whether a customer's next payment is delinquent (late), when 'DELINQ_NEXT' = 1 means late and when 'DELINQ_NEXT' = 0 means on-time 
 * **Type of model**: Decision Tree
 * **Software used to implement the model**: Python, doing it on the google colab
 * **Version of the modeling software**: 0.22.2.post1
