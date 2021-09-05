@@ -121,10 +121,12 @@ The min AIR: 0.8332>0.8. Then all AIR in validation data is greater than 0.8.
 This model performs well after 6 iterations. 
 The results of the first model are following:
 
+
 | Data type | AUC |
 | ---- | ------------- | 
 | Training data |  0.7693 |
 | Validation data | 0.7425 | 
+
 
 The standard deviation of the model is 0.0199. **The hispanic-to-white AIR is 0.76, which is problematic and lower than 0.8**. So I adjust the model.
 
